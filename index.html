@@ -16,20 +16,20 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-    <!---  <div id="unity-warning"> </div>
+      <!--<div id="unity-warning"> </div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">BaseEndlessRun</div>
-      </div>
-    </div> -->
+      </div> -->
+    </div>
     <script>
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      // var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Finish.loader.js";
+      var loaderUrl = buildUrl + "/Final.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Finish.data.unityweb",
-        frameworkUrl: buildUrl + "/Finish.framework.js.unityweb",
-        codeUrl: buildUrl + "/Finish.wasm.unityweb",
+        dataUrl: buildUrl + "/Final.data.unityweb",
+        frameworkUrl: buildUrl + "/Final.framework.js.unityweb",
+        codeUrl: buildUrl + "/Final.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "StackItHigh",
         productName: "BaseEndlessRun",
